@@ -87,7 +87,7 @@ nav {
     color: var(--navy);
     text-decoration: none;
     letter-spacing: 0.01em;
-    line-height: 1.15;
+    line-height: 1;
 }
 
 .logo span {
@@ -98,7 +98,7 @@ nav {
     text-transform: uppercase;
     color: var(--clay);
     font-weight: 500;
-    margin-top: 2px;
+    margin-top: 1px;
 }
 
 .nav-links {
