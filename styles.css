@@ -368,6 +368,41 @@ section.alt .research-card { background: var(--paper); }
 
 .research-card p { color: var(--muted); font-size: 0.95rem; }
 
+.research-card p { color: var(--ink); font-size: 0.95rem; }
+
+.course-group { margin-bottom: 1.3rem; }
+.course-group:last-child { margin-bottom: 0; }
+
+.course-label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--clay);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.course-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.course-list li {
+    color: var(--ink);
+    font-size: 0.92rem;
+    padding-left: 0.9rem;
+    position: relative;
+    margin-bottom: 0.25rem;
+}
+
+.course-list li::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+    color: var(--clay);
+}
+
 /* -------------------- Publications -------------------- */
 .publication {
     padding: 1.4rem 0;
