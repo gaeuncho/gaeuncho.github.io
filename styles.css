@@ -1,17 +1,11 @@
-/* ============================================================
-   Ga Eun Cho — academic site
-   Design system: archival paper + bureaucratic stamp motif,
-   grounded in the subject matter (migration paperwork, borders,
-   diaspora documentation).
-   ============================================================ */
 
 :root {
     --paper: #F6F2E9;
     --paper-alt: #EFE9DA;
     --ink: #17232B;
-    --navy: #0F2C3E;
-    --clay: #AE4A2E;
-    --clay-dark: #8F3B24;
+    --navy: #00313C;
+    --clay: #E31C79;
+    --clay-dark: #C51865;
     --muted: #6B6558;
     --line: #D8CFBB;
     --line-strong: #B9AF97;
