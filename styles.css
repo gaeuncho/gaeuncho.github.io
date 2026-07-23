@@ -87,6 +87,7 @@ nav {
     color: var(--navy);
     text-decoration: none;
     letter-spacing: 0.01em;
+    line-height: 1.15;
 }
 
 .logo span {
