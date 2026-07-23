@@ -77,7 +77,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.6rem 0;
+    padding: 1.1rem 0;
 }
 
 .logo {
@@ -87,7 +87,6 @@ nav {
     color: var(--navy);
     text-decoration: none;
     letter-spacing: 0.01em;
-    line-height: 1;
 }
 
 .logo span {
@@ -98,7 +97,7 @@ nav {
     text-transform: uppercase;
     color: var(--clay);
     font-weight: 500;
-    margin-top: 1px;
+    margin-top: 2px;
 }
 
 .nav-links {
