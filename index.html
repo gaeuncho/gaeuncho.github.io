@@ -3,514 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ga Eun Cho - Johns Hopkins University</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Baskerville', serif;
-            line-height: 1.6;
-            color: #333;
-            background: #fafafa;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        header {
-            background: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #00313C;
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: #555;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: #00313C;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #00313C 0%, #E31C79 100%);
-            color: white;
-            padding: 4rem 0;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            font-weight: 300;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .profile-photo {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            margin: 2rem auto;
-            border: 4px solid rgba(255,255,255,0.8);
-            overflow: hidden;
-        }
-
-        section {
-            padding: 4rem 0;
-            background: white;
-            margin: 2rem 0;
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-        }
-
-        section:nth-child(even) {
-            background: #f8f9fa;
-        }
-
-        h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            color: #00313C;
-            text-align: center;
-            position: relative;
-        }
-
-        h2::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 3px;
-            background: #E31C79;
-            margin: 1rem auto;
-        }
-
-        h3 {
-            color: #00313C;
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
-
-        .bio {
-            font-size: 1.1rem;
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: justify;
-        }
-
-        .research-areas {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .research-card {
-            padding: 2rem;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .research-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .publication {
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid #eee;
-        }
-
-        .publication:last-child {
-            border-bottom: none;
-        }
-
-        .pub-title {
-            font-weight: bold;
-            color: #00313C;
-            margin-bottom: 0.5rem;
-        }
-
-        .pub-authors {
-            color: #666;
-            margin-bottom: 0.5rem;
-        }
-
-        .pub-venue {
-            font-style: italic;
-            color: #888;
-        }
-
-        .contact-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            text-align: center;
-        }
-
-        .contact-item {
-            padding: 1.5rem;
-            background: #f8f9fa;
-            border-radius: 8px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background: #E31C79;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            margin: 1rem 0;
-        }
-
-        .btn:hover {
-            background: #c51865;
-            transform: translateY(-2px);
-        }
-
-        footer {
-            background: #00313C;
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 4rem;
-        }
-
-        .mobile-menu {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
-
-        .mobile-menu span {
-            display: block;
-            height: 3px;
-            width: 25px;
-            background: #00313C;
-            margin: 3px 0;
-            transition: 0.3s;
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            
-            .mobile-menu {
-                display: flex;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .research-areas {
-                grid-template-columns: 1fr;
-            }
-            
-            section {
-                margin: 1rem 0;
-            }
-        }
-    </style>
+    <title>Ga Eun Cho — Political Science, Johns Hopkins University</title>
+    <meta name="description" content="Ga Eun Cho is a PhD Candidate in Political Science at Johns Hopkins University working on migration, development, and East Asian politics.">
+    <meta property="og:title" content="Ga Eun Cho — Political Science, Johns Hopkins University">
+    <meta property="og:description" content="PhD Candidate researching the politics of migration, development, and diaspora governance in East Asia.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="Cho-Headshot.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <header>
         <nav class="container">
-            <div class="logo">Ga Eun Cho</div>
+            <a class="logo" href="index.html">Ga Eun Cho<span>Political Science · JHU</span></a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#teaching">Teaching</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button class="mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </nav>
     </header>
 
-    <div class="hero">
-        <div class="container">
-            <div class="profile-photo">
-    <img src="Cho-Headshot.jpeg" alt="Ga Eun Cho" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
-</div>
-            <h1>Ga Eun Cho</h1>
-            <p>PhD Candidate in Political Science at Johns Hopkins University</p>
-            <a href="CV_ChoGaEun_Web_July2026-2.pdf" class="btn" download>Download CV</a>
-        </div>
-    </div>
-
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="bio">
-                <p>My name is <b>Ga Eun Cho</b> (조가은, pronounced: GAH-un JOH). I am a PhD candidate in Political Science at Johns Hopkins University and a Graduate Fellow at the Chloe Center for the Critical Study of Racism, Immigration, and Colonialism. I am serving as the Associate Editor of the Cambridge Politics and Society in East Asia series. During the Fall 2025 semester, I was a Junior Fellow at the International Center for Korean Studies in the Kyujanggak Institute at Seoul National University.
-</p>
-                <br>
-                <p>My research interests span Political Economy of Development, Migration and Security, and East Asian Politics and Society. Across these fields, I demonstrate that development has been conceived in a way that justifies and even necessitates mobility and exclusion. Specifically, I am interested in the interconnections between state goals, such as economic development, postcolonial reconstruction, modernization, and Cold War survival, and boundary-making strategies, including nation-building, migration, and citizenship policies. My reserach intervenes in key debates across multiple fields: In Political Economy, I ask how latecomer states pursue economic development through population engineering; in International Relations, I ask whether migrations and diasporas are beneficial or to state’s economies, politics, and societies; and in East Asian Studies, I explore how to explain South Korea’s political transition and economic development in context of post-colonialism and Cold War. I approach these questions from a transnational historical perspective, highlighting the movements, connections, and influence of diverse actors across time and space.</p>
-                <br>
-                <p>My dissertation, <i>Rethinking Migration and Development: The Politics of Emigration in South Korea</i> examines state-led emigration and diaspora engagement policies as strategies of economic development. 
-                    Migration was central to the state’s vision of progress as a mechanism for defining and policing national membership. Drawing on archival and interview-based fieldwork, I show how emigration policies were part of broader population engineering strategies, such as sterilization programs and anti-communist purges during the Cold War. I argue that South Korea’s mass emigration policies, initiated in the early 1960s, were also a mechanism for defining the “modern” Korean population by excluding certain groups deemed undesirable.
-                    I analyze this through a comparison of three state-led emigration policies, each targeting different populations and destinations: transnational adoption, temporary labor migration to Germany, and agricultural migration/family relocation to South America. In doing so, my work  shifts attention away from the dominant focus in the on labor migration from the Global South to the Global North, to diverse patterns and contexts.</p>
-                <br>
-                <p>Existing scholarship on migration and development emphasizes remittances and other tangible economic gains from sending citizens abroad. In contrast, I argue that sociopolitical exclusion lies at the heart of development itself. By reconceptualizing development as a process of exclusion rather than solely economic growth, I contribute to debates in comparative political economy, migration and citizenship studies, and the study of latecomer economic development. This framework recasts exclusionary policies, such as displacement, emigration, and revocation of citizenship, from anomalies or side effects of development into its central facets. 
-                    These findings have broader historical and comparative implications on how different states engage with, restrict, or encourage migration, even in the absense of immediate utilitarian benefits. Why push out major sources of low-wage labor by enforcing strict measures against undocumented immigrants? Why repress political dissidents abroad despite risk of sanctions? I argue that such policies are better understood as part of a state’s effort to control the boundaries of belonging in service of broader state goals such as economic development or regime stability.</p>
-                <br>
-                <p>I adopt a transnational historical approach, using a mix of qualitative methods including archival, fieldwork and interview research in English, Korean, and mixed Chinese-Korean mixed script. My fieldwork has been supported by competitive grants I have won from the Kyujanggak Institute at Seoul National University, as well as from the East Asian Studies program, the Chloe Center for the Critical Study of Racism, Immigration, and Colonialism, and the Political Science Department at Johns Hopkins University.</p>
-                <br>
-                <p>I obtained my MA in International Relations from Seoul National University and a BA in Asian Studies and Economics from Yonsei University.</p>
-            </div>
-        </div>
-    </section>
-
-   <section id="research">
-    <div class="container">
-        <h2>Research</h2>
-        
-        <h3>Research Areas</h3>
-        <div class="research-areas">
-            <div class="research-card">
-                <h3>Political Economy of Development</h3>
-                <p>Development in the Global South, Developmental State in East Asia, Migration, Population, and Development.</p>
-            </div>
-            <div class="research-card">
-                <h3>Migration and Security</h3>
-                <p>International Migration, Disapora Politics, Borders, Transnational Repression, Passport and Visa Regimes.</p>
-            </div>
-            <div class="research-card">
-                <h3>East Asian Politics and Society</h3>
-                <p>US-East Asia Relations, Korean Peninsula, Political and Social Transformation, Transitional Justice.</p>
+    <main id="main">
+        <div class="hero">
+            <div class="container">
+                <div>
+                    <p class="hero-eyebrow">PhD Candidate · Political Science</p>
+                    <h1>Ga Eun Cho <span class="name-native">조가은</span></h1>
+                    <p class="role">Johns Hopkins University</p>
+                    <p class="affil">Graduate Fellow, Chloe Center for the Critical Study of Racism, Immigration, and Colonialism. Associate Editor, Cambridge Politics and Society in East Asia series.</p>
+                    <div class="hero-actions">
+                        <a href="CV_ChoGaEun_Web_July2026-2.pdf" class="btn" download>Download CV</a>
+                        <a href="contact.html" class="btn btn-outline">Get in touch</a>
+                    </div>
+                </div>
+                <div class="id-frame">
+                    <div class="id-photo">
+                        <img src="Cho-Headshot.jpeg" alt="Portrait of Ga Eun Cho">
+                    </div>
+                    <p class="id-caption">Baltimore, MD</p>
+                    <div class="stamp" aria-hidden="true">
+                        <div class="stamp-inner">Est.<br>2021<br>JHU</div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <h3 style="margin-top: 4rem;">Publications & Working Papers</h3>
-        
-        <h4 style="color: #00313C; margin-top: 2rem; margin-bottom: 1rem;">Working Papers</h4>
-        <div class="publication">
-            <div class="pub-title" style="cursor: pointer; color: #E31C79;" onclick="toggleAbstract('abstract1')">
-                Exile by Paperwork: Ambiguity as Diaspora Governance in Divided Post-Colonial States ▼
-            </div>
-            <div class="pub-venue">Draft available on request</div>
-            <div id="abstract1" class="abstract" style="display: none; margin-top: 1rem; padding: 1rem; background: #f8f9fa; border-left: 3px solid #E31C79;">
-                <strong>Abstract:</strong> How do states govern diasporas simultaneously claimed by a rival sovereign? The global processes of decolonization and the Cold War produced “divided states,” such as the Republic of Korea (South Korea) and the Democratic People’s Republic of Korea (North Korea). Each divided state claimed sole legitimate representation of a single nation and its diaspora. Yet the study of diaspora governance in International Relations largely assumes a single home state that includes or excludes external populations based on economic, security, or normative considerations. This article argues that such assumptions overlook how structural conditions, such as division, reshape diaspora governance. In divided states, neither full exclusion nor full incorporation of diasporas is viable. Exclusion risks ceding legitimacy to the rival, while incorporation, especially of populations tied to the rival, poses ideological and security threats. I argue that divided states resolve this dilemma by maintaining the ambiguous status of diasporic populations. Drawing on South Korea’s diaspora policies from division to the present, this article identifies a mechanism I term “exile by paperwork”: the strategic use of bureaucratic instruments of belonging and mobility to effectively exclude populations without formally disavowing them. By keeping legal status revocable and uncertain, the state places targeted populations in a condition of permanent suspension, using the threat of exclusion and the promise of inclusion as tools of discipline. This argument contributes to scholarship on diaspora governance by showing how bureaucratic power operates not only through legibility but also through the deliberate production of ambiguity in contexts of geopolitical competition.
-            </div>
-        </div>
+        <div class="perforation" aria-hidden="true"></div>
 
-        <h4 style="color: #00313C; margin-top: 2rem; margin-bottom: 1rem;">Book Chapters</h4>
-        <div class="publication">
-            <div class="pub-title" style="cursor: pointer; color: #E31C79;" onclick="toggleAbstract('abstract3')">
-                “Eisenhower Administration’s Foreign Policy Decision-Making Process in Response to Syngman Rhee’s Release of Anti-Communist Prisoners” ▼
-            </div>
-            <div class="pub-venue">In Chaesung Chun (Ed.), <em>Generality and Specificity in East Asia Regional Order: Theory and Reality</em>. Seoul: Sapyong, 2018</div>
-            <div id="abstract3" class="abstract" style="display: none; margin-top: 1rem; padding: 1rem; background: #f8f9fa; border-left: 3px solid #E31C79;">
-                <strong>Abstract:</strong> This chapter analyzes why the Eisenhower administration in the United States decided to compromise to Syngman Rhee’s brinkmanship strategy of releasing anti-communist prisoners during the Korean War and agreed to sign the Mutual Defense Treaty Between the United States and Korea (US-ROK Mutual Defense Treaty). To this end, this chapter analyzes the perceptions of five key decision-makers in the administration; President Eisenhower, Secretary of State Dulles, Assistant Secretary of State for Far Eastern Affairs Robertson, US Ambassador to Korea Briggs, and UNC Commander-in-chief Clark. The time frame of the research is from the release of anti-communist prisoners by Rhee on June 19, 1953, until the signing of the NSC154/1 on July 3, 1953, which promised the US-ROK Mutual Defense Treaty. This study concludes that the perceptions of the decision-makers on Rhee’s intentions and rationales were integral in the decision-making process.
-            </div>
-        </div>
+        <section id="about">
+            <div class="container">
+                <p class="eyebrow">About</p>
+                <h2>Rethinking migration as a tool of exclusion</h2>
+                <div class="bio">
+                    <p>My name is <b>Ga Eun Cho</b> (조가은, pronounced <em>GAH-un JOH</em>). I am a PhD candidate in Political Science at Johns Hopkins University and a Graduate Fellow at the Chloe Center for the Critical Study of Racism, Immigration, and Colonialism. I serve as Associate Editor of the Cambridge Politics and Society in East Asia series, and during Fall 2025 I was a Junior Fellow at the International Center for Korean Studies in the Kyujanggak Institute at Seoul National University.</p>
 
-        <h4 style="color: #00313C; margin-top: 2rem; margin-bottom: 1rem;">Thesis</h4>
-        <div class="publication">
-            <div class="pub-title" style="cursor: pointer; color: #E31C79;" onclick="toggleAbstract('abstract4')">
-                Formulation and Systemization of Transnational Adoption Policy During Park Chung-Hee’s Regime ▼
-            </div>
-            <div class="pub-venue">MA Thesis, Seoul National University, 2019</div>
-            <div id="abstract4" class="abstract" style="display: none; margin-top: 1rem; padding: 1rem; background: #f8f9fa; border-left: 3px solid #E31C79;">
-                <strong>Abstract:</strong> In the aftermaths of the Korean War, South Korea aggressively promoted transnational adoption as an alternative to social welfare for children in need. In particular, the Park Chung-hee administration gave birth to Korea’s transnational adoption policy with the enactment of the “Intercountry adoption law with regard to the orphans” in 1961 but also continued to send children abroad despite the international scrutiny it faced due to the practice in the 1970s. This study argues that it was during the Park Chung-hee regime that transnational adoption became systemized in Korea. This study discovers the relationship between the Korean government’s modernization discourse, the collusion of the Korean society, the demand for adoption in the international society, and the growth of adoption agencies in rearing the policy of transnational adoption in Korea. The Korean government’s modernization discourse contributed to the formulation of the transnational adoption policy. Moreover, the government had been influenced by the discourse in the international society, transferred the responsibility for social welfare to adoption agencies in exchange for the guarantee of monopolization of the adoption market, and colluded with the Korean domestic society which was also under the influence of the international discourse. The international society and the adoption agencies, and in turn, the adoption agencies and Korean society were linked in a series of mutually reinforcing relationships. As such, this study demonstrates that the Korean government, focused on modernization as defined solely by economic growth, discriminated the problematic population that did not contribute to the goal from those that did, and that the offspring of such discrimination yet continues.
-            </div>
-        </div>
-        
-    </div>
-</section>
+                    <p>My research spans the Political Economy of Development, Migration and Security, and East Asian Politics and Society. Across these fields, I show that development has been conceived in ways that justify, and even require, mobility and exclusion. I am interested in the connections between state goals — economic development, postcolonial reconstruction, modernization, Cold War survival — and boundary-making strategies such as nation-building, migration, and citizenship policy. In Political Economy, I ask how latecomer states pursue development through population engineering; in International Relations, I ask whether migration and diaspora serve or strain a state's economy, politics, and society; and in East Asian Studies, I examine South Korea's political transition and economic development in light of postcolonialism and the Cold War. I approach these questions through a transnational historical lens, tracing the movements and influence of diverse actors across time and space.</p>
 
-    <section id="teaching">
-        <div class="container">
-            <h2>Teaching</h2>
-            
-            <div class="teaching-philosophy">
-    <h3>Teaching Philosophy</h3>
-    <p>My pedagogy centers on cultivating students’ ability to think critically and independently while tracing the sources of knowledge and the interconnections between different geographies and histories. I design courses that train students as critical consumers and responsible producers of knowledge, challenging them to interrogate how data and information are created, who produces them, and for what purposes.</p>
-    
-    <h3 style="margin-top: 2rem;">Teaching Goals</h3>
-    <p>My primary goals are to help students develop critical thinking skills, understand how to analyze complex political phenomena, and recognize the interconnections between different regions and time periods. I aim to foster intellectual curiosity and equip students with analytical tools they can apply beyond the classroom, whether in future academic work, professional careers, or civic engagement.</p>
-    
-    <p>I am committed to creating an inclusive learning environment that recognizes students have different needs and pathways to success. I work to ensure that diverse voices can participate fully in classroom dialogue.</p>
-    
-   <h3 style="margin-top: 2rem;">Teaching Methods</h3>
-<p>I employ diverse teaching methods that actively engage students in analyzing and creating primary and secondary sources while recognizing bias. I structure each course session around both a thematic focus and an analytical tool, allowing students to anchor substantive discussions while developing transferable intellectual skills such as identifying causal mechanisms or analyzing historical contingency.</p>
+                    <p>My dissertation, <i>Rethinking Migration and Development: The Politics of Emigration in South Korea</i>, examines state-led emigration and diaspora engagement as strategies of economic development. Migration was central to the state's vision of progress — a mechanism for defining and policing national membership. Drawing on archival and interview-based fieldwork, I show how emigration policy was part of broader population engineering strategies, including sterilization programs and anti-communist purges during the Cold War. I argue that South Korea's mass emigration policies, begun in the early 1960s, also worked to define the "modern" Korean population by excluding groups deemed undesirable. I develop this argument through a comparison of three state-led emigration programs, each targeting a different population and destination: transnational adoption, temporary labor migration to Germany, and agricultural migration and family relocation to South America — shifting attention away from the dominant focus on labor migration from the Global South to the Global North.</p>
 
-<p>My assignments immerse students in knowledge production processes through hands-on activities. These include dissecting archival materials to replicate and evaluate scholarly arguments, and creating original research projects from institutional perspectives to understand how position shapes analysis.</p>
+                    <p>Existing scholarship on migration and development emphasizes remittances and other tangible economic gains from sending citizens abroad. I argue instead that sociopolitical exclusion lies at the heart of development itself. By reconceptualizing development as a process of exclusion rather than economic growth alone, I contribute to debates in comparative political economy, migration and citizenship studies, and the study of latecomer development — recasting exclusionary policies such as displacement, emigration, and denaturalization from side effects of development into its central facets. This has broader implications for how states restrict or encourage migration even absent immediate utilitarian benefit: why push out major sources of low-wage labor through strict measures against undocumented immigrants? Why repress political dissidents abroad despite the risk of sanctions? I argue such policies are better understood as efforts to control the boundaries of belonging in service of broader state goals, from economic development to regime stability.</p>
+
+                    <p>I use a mix of qualitative methods — archival, fieldwork, and interview research — in English, Korean, and mixed Chinese-Korean script. My fieldwork has been supported by competitive grants from the Kyujanggak Institute at Seoul National University, the East Asian Studies program, the Chloe Center for the Critical Study of Racism, Immigration, and Colonialism, and the Department of Political Science at Johns Hopkins University.</p>
+
+                    <p>I hold an MA in International Relations from Seoul National University and a BA in Asian Studies and Economics from Yonsei University.</p>
+                </div>
             </div>
+        </section>
 
-<div class="teaching-experience" style="margin-top: 3rem;">
-    <h3>Teaching Experience</h3>
-    
-<table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
-        <thead>
-            <tr style="border-bottom: 2px solid #00313C; font-size: 0.95rem;">
-                <th style="text-align: left; padding: 0.3rem; color: #00313C; font-weight: bold;">Role</th>
-                <th style="text-align: left; padding: 0.3rem; color: #00313C; font-weight: bold;">Course</th>
-                <th style="text-align: left; padding: 0.3rem; color: #00313C; font-weight: bold;">Instructor (Semester)</th>
-            </tr>
-        </thead>
-        <tbody style="font-size: 0.9rem;">            
-            <tr style="border-bottom: 1px solid #eee;">
-                <td style="padding: 0.3rem;"><strong>Head TA</strong></td>
-                <td style="padding: 0.3rem;">Introduction to American Politics</td>
-                <td style="padding: 0.3rem;">Dr. Adam Sheingate (<em>Spring '25</em>)</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #eee;">
-                <td style="padding: 0.3rem;"><strong>Co-Instructor</strong></td>
-                <td style="padding: 0.3rem;">Political Economy of Japan and Korea</td>
-                <td style="padding: 0.3rem;">Dr. Erin Aeran Chung (<em>Spring '24</em>)</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #eee;">
-                <td style="padding: 0.3rem;"><strong>TA</strong></td>
-                <td style="padding: 0.3rem;">Democracy and Dictatorship</td>
-                <td style="padding: 0.3rem;">Dr. Sebastián Mazzuca (<em>Spring '23</em>)</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #eee;">
-                <td style="padding: 0.3rem;"><strong>TA</strong></td>
-                <td style="padding: 0.3rem;">War and Peace in History</td>
-                <td style="padding: 0.3rem;">Dr. Doohwan Ahn (<em>Fall '18</em>)</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #eee;">
-                <td style="padding: 0.3rem;"><strong>TA</strong></td>
-                <td style="padding: 0.3rem;">East Asia International Relations</td>
-                <td style="padding: 0.3rem;">Dr. Wookhee Shin (<em>Spring '18</em>)</td>
-            </tr>
-            <tr>
-                <td style="padding: 0.3rem;"><strong>TA</strong></td>
-                <td style="padding: 0.3rem;">Theory of International Relations</td>
-                <td style="padding: 0.3rem;">Dr. Wookhee Shin (<em>Fall '17</em>)</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-            
-            <div class="teaching-areas" style="margin-top: 3rem;">
-                <h3>Courses I Can Offer</h3>
+        <div class="perforation" aria-hidden="true"></div>
+
+        <section class="alt" id="highlights">
+            <div class="container">
+                <p class="eyebrow">Explore</p>
+                <h2>More on this site</h2>
                 <div class="research-areas">
                     <div class="research-card">
-                        <h3>Political Science</h3>
-                        <p><strong>Comparative Politics:</strong> What is the state, regime, and government? What is nation? Why are some countries rich and others poor?</p>
-                        <p><strong>International Relations:</strong> What is the nature of the international order? How do states interact in the international system? What is war and why do they occur?</p>
-                        <p><strong>Migration and Diaspora:</strong> What is migration and diaspora? How do migration and diaspora impact the countries of origin and destination?</p>
+                        <h3>Research</h3>
+                        <p>Dissertation summary, research areas, publications, and working papers.</p>
+                        <p style="margin-top:1rem;"><a class="btn btn-outline" href="research.html">View research</a></p>
                     </div>
                     <div class="research-card">
-                        <h3>East Asian Studies</h3>
-                        <p><strong>US-East Asia Relations:</strong> What is the role and strategy of the U.S. toward East Asia?</p>
-                        <p><strong>Political Economy of Japan and Korea:</strong> What is the developmental state in Japan and Korea? How have wars, alliance, and colonialism shaped Japan and Korea’s political economy?</p>
-                        <p><strong>Korean Studies:</strong> Topics in politics, society, culture, and history in North and South Korea.</p>
+                        <h3>Teaching</h3>
+                        <p>Teaching philosophy, courses taught at Johns Hopkins and Seoul National University, and courses I can offer.</p>
+                        <p style="margin-top:1rem;"><a class="btn btn-outline" href="teaching.html">View teaching</a></p>
                     </div>
                     <div class="research-card">
-                        <h3>Specialized Courses</h3>
-                        <p><strong>Gender and Global Politics:</strong> Transnational Adoption, Militarization and Gender, Labor and Care, Population and Reproduction.</p>
-                        <p><strong>Qualitative Methods:</strong> Preparing for Fieldwork, Archival Reserach, Interviews, Reserach Ethics, Community Engaged Reserach.</p>
-                        <p><strong>Public Speaking and Forensics:</strong> Debate, Mock Trial, Model United Nations.</p>
+                        <h3>Contact</h3>
+                        <p>Email, office location, and links to my CV and professional profiles.</p>
+                        <p style="margin-top:1rem;"><a class="btn btn-outline" href="contact.html">Get in touch</a></p>
                     </div>
                 </div>
             </div>
-
-    
-        </div>
-    </section>
-
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <h3>Email</h3>
-                    <p>gcho2 [at] jhu [dot] edu</p>
-                </div>
-                <div class="contact-item">
-                    <h3>Office</h3>
-                    <p>Merganthaler, 338<br>
-                    Johns Hopkins University</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Ga Eun Cho. All rights reserved.</p>
+            <p>&copy; 2026 Ga Eun Cho</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
     </footer>
 
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            });
-        });
-
-        // Simple mobile menu toggle (you can expand this)
-        const mobileMenu = document.querySelector('.mobile-menu');
-        const navLinks = document.querySelector('.nav-links');
-        
-        mobileMenu.addEventListener('click', function() {
-            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-        });
-    </script>
-    <script>
-    function toggleAbstract(id) {
-        var abstract = document.getElementById(id);
-        if (abstract.style.display === "none") {
-            abstract.style.display = "block";
-        } else {
-            abstract.style.display = "none";
-        }
-    }
-</script>
+    <script src="script.js"></script>
 </body>
 </html>
