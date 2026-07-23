@@ -375,8 +375,7 @@ section.alt .research-card { background: var(--paper); }
 /* Corner brackets — a quiet nod to customs-stamp and ID-photo corner
    marks, kept abstract rather than a literal stamp shape. */
 .research-card,
-.contact-item,
-.id-photo {
+.contact-item {
     background-image:
         linear-gradient(to right, var(--clay) 2px, transparent 2px),
         linear-gradient(to bottom, var(--clay) 2px, transparent 2px),
