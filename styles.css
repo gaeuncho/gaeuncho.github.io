@@ -1,3 +1,9 @@
+/* ============================================================
+   Ga Eun Cho — academic site
+   Design system: archival paper + bureaucratic stamp motif,
+   grounded in the subject matter (migration paperwork, borders,
+   diaspora documentation).
+   ============================================================ */
 
 :root {
     --paper: #F6F2E9;
@@ -177,6 +183,7 @@ nav {
     font-size: 1.4rem;
     color: var(--muted);
     font-weight: 400;
+    white-space: nowrap;
 }
 
 .hero p.role {
@@ -366,20 +373,18 @@ section.alt .research-card { background: var(--paper); }
 
 .research-card h3 { font-size: 1.05rem; }
 
-.research-card p { color: var(--muted); font-size: 0.95rem; }
-
 .research-card p { color: var(--ink); font-size: 0.95rem; }
 
-.course-group { margin-bottom: 1.3rem; }
+.course-group { margin-bottom: 1rem; }
 .course-group:last-child { margin-bottom: 0; }
 
 .course-label {
-    font-family: var(--font-body);
-    font-size: 1rem;
+    font-family: var(--font-display);
+    font-size: 1.05rem;
     font-weight: 600;
     color: var(--clay);
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.35rem;
 }
 
 .course-list {
@@ -390,9 +395,10 @@ section.alt .research-card { background: var(--paper); }
 .course-list li {
     color: var(--ink);
     font-size: 0.92rem;
+    line-height: 1.4;
     padding-left: 0.9rem;
     position: relative;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.15rem;
 }
 
 .course-list li::before {
@@ -587,6 +593,10 @@ footer p {
 }
 
 @media (max-width: 700px) {
+    .container { padding: 0 28px; }
+
+    .research-card { padding: 1.4rem 1.3rem 1.5rem; }
+
     .nav-links {
         display: none;
         position: absolute;
