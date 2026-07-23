@@ -374,10 +374,9 @@ section.alt .research-card { background: var(--paper); }
 .course-group:last-child { margin-bottom: 0; }
 
 .course-label {
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
     color: var(--clay);
     display: block;
     margin-bottom: 0.5rem;
