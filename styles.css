@@ -298,11 +298,22 @@ section.alt { background: var(--paper-alt); }
     margin-top: 0.5rem;
     max-width: 640px;
 }
+
 .underline-dash {
     text-decoration: none;
-    border-bottom: 2px dashed var(--clay);
-    padding-bottom: 1px;
+    background-image: repeating-linear-gradient(
+        to right,
+        var(--clay) 0,
+        var(--clay) 3px,
+        transparent 3px,
+        transparent 4px
+    );
+    background-position: 0 100%;
+    background-size: 100% 2px;
+    background-repeat: repeat-x;
+    padding-bottom: 3px;
 }
+
 .eyebrow {
     font-family: var(--font-mono);
     font-size: 0.7rem;
