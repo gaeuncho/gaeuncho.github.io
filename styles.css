@@ -304,14 +304,14 @@ section.alt { background: var(--paper-alt); }
     background-image: repeating-linear-gradient(
         to right,
         var(--clay) 0,
-        var(--clay) 3px,
-        transparent 3px,
-        transparent 4px
+        var(--clay) 4px,
+        transparent 4px,
+        transparent 6px
     );
     background-position: 0 100%;
     background-size: 100% 2px;
     background-repeat: repeat-x;
-    padding-bottom: 3px;
+    padding-bottom: 1.5px;
 }
 
 .eyebrow {
