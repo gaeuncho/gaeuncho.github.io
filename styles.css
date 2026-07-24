@@ -298,7 +298,11 @@ section.alt { background: var(--paper-alt); }
     margin-top: 0.5rem;
     max-width: 640px;
 }
-
+.underline-dash {
+    text-decoration: none;
+    border-bottom: 2px dashed var(--clay);
+    padding-bottom: 1px;
+}
 .eyebrow {
     font-family: var(--font-mono);
     font-size: 0.7rem;
