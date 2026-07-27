@@ -299,6 +299,35 @@ section.alt { background: var(--paper-alt); }
     max-width: 640px;
 }
 
+/* Photo-banner variant: fieldwork photos behind the page-header text,
+   used on Research, Teaching, and Contact. */
+.page-header--photo {
+    position: relative;
+    padding: 5rem 0 4rem;
+    overflow: hidden;
+}
+
+.page-header--photo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(0,49,60,0.74), rgba(0,49,60,0.74)), var(--header-photo);
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(30%);
+    z-index: 0;
+}
+
+.page-header--photo .container {
+    position: relative;
+    z-index: 1;
+}
+
+.page-header--photo .eyebrow { color: var(--clay); }
+.page-header--photo .eyebrow::before { border-color: var(--clay); }
+.page-header--photo h1 { color: var(--paper); }
+.page-header--photo p { color: rgba(246,242,233,0.88); }
+
 .underline-dash {
     text-decoration: none;
     background-image: repeating-linear-gradient(
@@ -654,6 +683,8 @@ footer p {
 
     section { padding: 2.4rem 0; }
 
+    .page-header--photo { padding: 3.5rem 0 2.8rem; }
+   
     h2 { font-size: 1.6rem; }
 
     footer .container { flex-direction: column; align-items: flex-start; }
