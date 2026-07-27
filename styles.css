@@ -311,7 +311,7 @@ section.alt { background: var(--paper-alt); }
     content: "";
     position: absolute;
     inset: 0;
-    background-image: linear-gradient(rgba(0,49,60,0.74), rgba(0,49,60,0.74)), var(--header-photo);
+    background-image: linear-gradient(rgba(0,49,60,0.55), rgba(0,49,60,0.55)), var(--header-photo);
     background-size: cover;
     background-position: center;
     filter: grayscale(30%);
