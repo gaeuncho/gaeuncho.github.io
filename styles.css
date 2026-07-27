@@ -328,6 +328,20 @@ section.alt { background: var(--paper-alt); }
 .page-header--photo h1 { color: var(--paper); }
 .page-header--photo p { color: rgba(246,242,233,0.88); }
 
+.page-header--photo .photo-caption {
+    position: absolute;
+    right: 28px;
+    bottom: 18px;
+    z-index: 1;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(246,242,233,0.7);
+}
+
+/* end of header images, other stuff */
+
 .underline-dash {
     text-decoration: none;
     background-image: repeating-linear-gradient(
