@@ -676,7 +676,7 @@ footer p {
     .container { padding: 0 32px; }
 
     .research-card { padding: 1.4rem 1.3rem 1.5rem; }
-
+   .photo-caption { display: none; }
     .nav-links {
         display: none;
         position: absolute;
